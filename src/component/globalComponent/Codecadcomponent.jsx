@@ -255,7 +255,6 @@ const DataAnaComponent = () => {
                 variant="body1"
                 sx={{
                   fontSize: "15px",
-                  color: "#9B9B9B",
                   marginLeft: "-5px",
                   color: "#14C38E",
                 }}

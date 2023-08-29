@@ -35,7 +35,7 @@ const Title = styled(Typography)({
 });
 
 const Subtitle = styled(Typography)({
-  color: "#666",
+  // color: "#666",
   fontSize: "14px",
   textTransform: "uppercase",
   color: "#6FD660",
