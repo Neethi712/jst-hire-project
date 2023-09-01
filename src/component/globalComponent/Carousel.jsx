@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Typography, MobileStepper, Grid, IconButton } from "@mui/material";
 import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
@@ -30,6 +30,21 @@ const Carousel = ({ items }) => {
       handleNext();
     }
   };
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      handleNext(); // Auto slide to the next image
+    }, 5000); // Change slide every 5 seconds
+
+    const zoomOutTimeout = setTimeout(() => {
+      setZoomedOut(false); // Auto zoom out after 5 seconds
+    }, 5000);
+
+    return () => {
+      clearInterval(slideInterval);
+      clearTimeout(zoomOutTimeout);
+    };
+  }, [activeStep]);
 
   return (
     <Grid
@@ -122,6 +137,7 @@ const Carousel = ({ items }) => {
                 "&:hover": {
                   backgroundColor: "#14C38E",
                   color: "#000000",
+                  border: "1.2px solid #14C38E",
                 },
               }}
             >

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { Grid, Typography, Button } from "@mui/material";
-import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import React, { useState, useEffect } from "react";
+import { Grid } from "@mui/material";
+import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
+import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
 import fthree from "../../assets/images/f3.jpg";
 import ftwo from "../../assets/images/f2.jpg";
@@ -30,7 +31,7 @@ const carouselData = [
 
 const SubCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
   const handleSlideChange = (step) => {
     const newSlide =
@@ -38,14 +39,23 @@ const SubCarousel = () => {
     setCurrentSlide(newSlide);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleSlideChange(1); // Move to the next slide
+    }, 5000); // Change slide every 5 seconds
+
+    return () => {
+      clearInterval(interval); // Clear the interval when the component unmounts
+    };
+  }, [currentSlide]);
   const currentCarouselItem = carouselData[currentSlide];
 
   return (
     <Grid
       container
       spacing={3}
-      onMouseEnter={() => setIsHovered(true)} // Set isHovered to true when hovering
-      onMouseLeave={() => setIsHovered(false)} // Set isHovered to false when not hovering
+      // onMouseEnter={() => setIsHovered(true)} // Set isHovered to true when hovering
+      // onMouseLeave={() => setIsHovered(false)} // Set isHovered to false when not hovering
       sx={{
         padding: "120px 0 105px",
         margin: " 0 auto",
@@ -90,20 +100,56 @@ const SubCarousel = () => {
             xs: "25.5%",
             md: "none",
           },
-          opacity: isHovered ? 1 : 0,
-          pointerEvents: isHovered ? "auto" : "none",
+          // opacity: isHovered ? 1 : 0,
+          // pointerEvents: isHovered ? "auto" : "none",
           transition: "opacity 0.3s ease-in-out",
+          position: "relative",
         }}
       >
-        <Button
+        <Grid
+          sx={{ display: { xs: "none", md: "block" } }}
           onClick={() => handleSlideChange(-1)}
-          sx={{ borderRadius: "100%" }}
         >
-          {<KeyboardArrowLeft />}
-        </Button>
-        <Button onClick={() => handleSlideChange(1)}>
-          {<KeyboardArrowRight />}
-        </Button>
+          {
+            <KeyboardArrowLeftRoundedIcon
+              sx={{
+                margin: { xs: "0px", md: "0 -20px" },
+                position: "absolute",
+                top: "42%",
+                left: "1.7%",
+                backgroundColor: "#14C38E",
+                borderRadius: "100%",
+                padding: "4px",
+                width: "40px",
+                height: "40px",
+                color: "#FFFFFF",
+                cursor: "pointer",
+              }}
+            />
+          }
+        </Grid>
+        <Grid
+          sx={{ display: { xs: "none", md: "block" } }}
+          onClick={() => handleSlideChange(1)}
+        >
+          {
+            <KeyboardArrowRightRoundedIcon
+              sx={{
+                margin: "0 -4px",
+                position: "absolute",
+                top: "42%",
+                left: { xs: "94%", md: "97%" },
+                backgroundColor: "#14C38E",
+                borderRadius: "100%",
+                padding: "4px",
+                width: "40px",
+                height: "40px",
+                color: "#FFFFFF",
+                cursor: "pointer",
+              }}
+            />
+          }
+        </Grid>
       </Grid>
     </Grid>
   );

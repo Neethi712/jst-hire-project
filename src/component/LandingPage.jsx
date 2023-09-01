@@ -16,6 +16,8 @@ import SubCarousel from "./globalComponent/SubCarousel";
 import Popular from "./globalComponent/Popular";
 import Experience from "./globalComponent/Experience";
 import Events from "./globalComponent/Events";
+import Review from "./globalComponent/Review";
+import Footer from "./globalComponent/Footer";
 
 const carouselItems = [
   {
@@ -56,25 +58,13 @@ function LandingPage() {
           </Grid>
           <Grid item xs={12} sx={{ overflowY: "hidden" }}>
             <AboutInfo />
-          </Grid>
-          <Grid item xs={12} sx={{ overflowY: "hidden" }}>
             <ChoseUs />
-          </Grid>
-          <Grid item xs={12} sx={{ overflowY: "hidden" }}>
             <SubCarousel />
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sx={{ overflowY: "hidden", backgroundColor: "#F9F9F9" }}
-          >
             <Popular />
-          </Grid>
-          <Grid item xs={12} sx={{ overflowY: "hidden" }}>
             <Experience />
-          </Grid>
-          <Grid item xs={12} sx={{ overflowY: "hidden" }}>
             <Events />
+            <Review />
+            <Footer />
           </Grid>
         </Grid>
       </Container>

@@ -589,7 +589,7 @@ const Events = () => {
           marginBottom: "30px",
           marginTop: {
             xs: "10px",
-            md: "none",
+            md: "-20px",
           },
           maxWidth: {
             xs: "400px",
@@ -751,6 +751,7 @@ const Events = () => {
             "&:hover": {
               backgroundColor: "#14C38E",
               color: "#FFFFFF",
+              border: "2px solid #14C38E",
             },
           }}
         >

@@ -55,7 +55,8 @@ const ChoseUs = () => {
           xs={12}
           md={6}
           sx={{
-            background: `linear-gradient(120deg, #00FFAB, #B8F1B0, #D2FACC, #14C38E)`,
+            // background: `linear-gradient(120deg, #00FFAB, #B8F1B0, #D2FACC, #14C38E)`,
+            backgroundColor: "#14C58E",
             padding: "120px 120px 120px 50px",
           }}
         >
@@ -79,7 +80,7 @@ const ChoseUs = () => {
                 display: "block",
                 position: "absolute",
                 height: "2px",
-                backgroundColor: "#14C38E",
+                backgroundColor: "#FFFFFF",
               },
               "&::before": {
                 left: 0,

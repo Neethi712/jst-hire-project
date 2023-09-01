@@ -142,6 +142,7 @@ const Popular = () => {
           xs: "100px 10px 85px",
           md: "120px 0 105px",
         },
+        backgroundColor: "#F9F9F9"
       }}
     >
       <Typography
