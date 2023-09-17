@@ -101,7 +101,7 @@ const Review = () => {
       <Grid
         container
         sx={{
-          maxWidth: { xs: "380px", md: "800px" },
+          maxWidth: { xs: "380px", sm: "550px", md: "800px" },
           mx: "auto",
           marginBottom: "50px",
         }}

@@ -19,7 +19,6 @@ import prokash from "../../assets/images/prokash.jpg";
 import munil from "../../assets/images/munil.jpg";
 import akua from "../../assets/images/akua.jpg";
 import Description from "./Description";
-import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
@@ -142,7 +141,7 @@ const Popular = () => {
           xs: "100px 10px 85px",
           md: "120px 0 105px",
         },
-        backgroundColor: "#F9F9F9"
+        backgroundColor: "#F9F9F9",
       }}
     >
       <Typography
@@ -181,7 +180,7 @@ const Popular = () => {
       <Grid
         container
         sx={{
-          maxWidth: { xs: "380px", md: "800px" },
+          maxWidth: { xs: "380px", sm: "550px", md: "800px" },
           mx: "auto",
           marginBottom: "50px",
         }}
@@ -227,7 +226,7 @@ const Popular = () => {
         </Grid>
 
         {visibleCourses.map((course, index) => (
-          <Grid item xs={12} md={4} key={index}>
+          <Grid item xs={12} sm={4} md={4} key={index}>
             <Card
               sx={{
                 width: "100%",

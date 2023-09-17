@@ -127,6 +127,9 @@ const AboutInfo = () => {
                 borderColor: "#00FFAB",
                 backgroundColor: "none",
               },
+              "&:focus": {
+                outline: "none",
+              },
             }}
           >
             read more

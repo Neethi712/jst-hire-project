@@ -60,7 +60,7 @@ const Events = () => {
       <Grid
         container
         sx={{
-          maxWidth: { xs: "380px", md: "800px" },
+          maxWidth: { xs: "380px", sm: "550px", md: "800px" },
           mx: "auto",
           marginBottom: "50px",
         }}
@@ -81,6 +81,7 @@ const Events = () => {
           marginBottom: "30px",
           maxWidth: {
             xs: "400px",
+            sm: "600px",
             md: "1170px",
           },
           boxShadow: 3,
@@ -193,6 +194,9 @@ const Events = () => {
                     backgroundColor: "#00FFAB",
                     color: "#FFFFFF",
                   },
+                  "&:focus": {
+                    outline: "none",
+                  },
                 }}
               >
                 book now
@@ -220,6 +224,9 @@ const Events = () => {
                   "&:hover": {
                     color: "#14C38E",
                   },
+                  "&:focus": {
+                    outline: "none",
+                  },
                 }}
               >
                 available
@@ -239,6 +246,7 @@ const Events = () => {
           marginBottom: "20px",
           maxWidth: {
             xs: "400px",
+            sm: "600px",
             md: "1170px",
           },
         }}
@@ -375,6 +383,9 @@ const Events = () => {
                       backgroundColor: "#00FFAB",
                       color: "#FFFFFF",
                     },
+                    "&:focus": {
+                      outline: "none",
+                    },
                   }}
                 >
                   book now
@@ -401,6 +412,9 @@ const Events = () => {
                     color: "#14C38E",
                     "&:hover": {
                       color: "#14C38E",
+                    },
+                    "&:focus": {
+                      outline: "none",
                     },
                   }}
                 >
@@ -541,6 +555,9 @@ const Events = () => {
                       backgroundColor: "#00FFAB",
                       color: "#FFFFFF",
                     },
+                    "&:focus": {
+                      outline: "none",
+                    },
                   }}
                 >
                   book now
@@ -568,6 +585,9 @@ const Events = () => {
                     "&:hover": {
                       color: "#14C38E",
                     },
+                    "&:focus": {
+                      outline: "none",
+                    },
                   }}
                 >
                   available
@@ -593,6 +613,7 @@ const Events = () => {
           },
           maxWidth: {
             xs: "400px",
+            sm: "600px",
             md: "1170px",
           },
           boxShadow: 3,
@@ -705,6 +726,9 @@ const Events = () => {
                     backgroundColor: "#00FFAB",
                     color: "#FFFFFF",
                   },
+                  "&:focus": {
+                    outline: "none",
+                  },
                 }}
               >
                 book now
@@ -732,6 +756,9 @@ const Events = () => {
                   "&:hover": {
                     color: "#14C38E",
                   },
+                  "&:focus": {
+                    outline: "none",
+                  },
                 }}
               >
                 available
@@ -752,6 +779,9 @@ const Events = () => {
               backgroundColor: "#14C38E",
               color: "#FFFFFF",
               border: "2px solid #14C38E",
+            },
+            "&:focus": {
+              outline: "none",
             },
           }}
         >

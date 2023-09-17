@@ -139,6 +139,9 @@ const Carousel = ({ items }) => {
                   color: "#000000",
                   border: "1.2px solid #14C38E",
                 },
+                "&:focus": {
+                  outline: "none",
+                },
               }}
             >
               Learn More
@@ -155,6 +158,9 @@ const Carousel = ({ items }) => {
                 "&:hover": {
                   backgroundColor: "#00FFAB",
                   color: "#000000",
+                },
+                "&:focus": {
+                  outline: "none",
                 },
               }}
             >
@@ -180,6 +186,11 @@ const Carousel = ({ items }) => {
               size="medium"
               onClick={handleBack}
               disabled={maxSteps <= 1}
+              sx={{
+                "&:focus": {
+                  outline: "none",
+                },
+              }}
             >
               <KeyboardArrowLeftRoundedIcon
                 sx={{
@@ -195,6 +206,11 @@ const Carousel = ({ items }) => {
               size="medium"
               onClick={handleNext}
               disabled={maxSteps <= 1}
+              sx={{
+                "&:focus": {
+                  outline: "none",
+                },
+              }}
             >
               <KeyboardArrowRightRoundedIcon
                 sx={{

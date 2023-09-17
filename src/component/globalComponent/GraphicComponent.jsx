@@ -161,6 +161,9 @@ const GraficComponent = () => {
                   backgroundColor: "#00FFAB",
                   color: "#FFFFFF",
                 },
+                "&:focus": {
+                  outline: "none",
+                },
               }}
             >
               enroll now

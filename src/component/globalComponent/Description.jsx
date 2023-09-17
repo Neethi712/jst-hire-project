@@ -171,6 +171,9 @@ const Description = ({ course }) => {
               backgroundColor: "#00FFAB",
               color: "#FFFFFF",
             },
+            "&:focus": {
+              outline: "none",
+            },
           }}
         >
           {price}
@@ -197,6 +200,9 @@ const Description = ({ course }) => {
             "&:hover": {
               backgroundColor: "#00FFAB",
               color: "#FFFFFF",
+            },
+            "&:focus": {
+              outline: "none",
             },
           }}
         >

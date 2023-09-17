@@ -31,7 +31,7 @@ const ReviewCard = ({ reviews }) => {
       container
       sx={{
         position: "relative",
-        maxWidth: { xs: "400px", md: "1170px" },
+        maxWidth: { xs: "400px", sm: "750px", md: "1170px" },
         mx: " auto",
         justifyContent: "center",
       }}
@@ -61,7 +61,7 @@ const ReviewCard = ({ reviews }) => {
         sx={{ margin: "0 auto", marginBottom: "20px" }}
       >
         {reviews.slice(currentIndex, currentIndex + 2).map((review, index) => (
-          <Grid item xs={12} md={6} key={index}>
+          <Grid item xs={12} sm={6} md={6} key={index}>
             <Grid
               container
               sx={{

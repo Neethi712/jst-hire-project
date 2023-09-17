@@ -45,7 +45,7 @@ const cardData = [
   {
     id: 5,
     imageSrc: Experience5, // Replace with actual image URL
-    instructor: "professon. monayem pruda",
+    instructor: "professon. monayem",
     subtitle: "senior developer",
   },
   {
@@ -125,7 +125,7 @@ const ExperienceCard = () => {
       <Grid
         container
         sx={{
-          maxWidth: { xs: "380px", md: "800px" },
+          maxWidth: { xs: "380px", sm: "550px", md: "800px" },
           mx: "auto",
           marginBottom: "50px",
         }}
@@ -170,7 +170,7 @@ const ExperienceCard = () => {
           />
         </Grid>
         {visibleCourses.map((card, index) => (
-          <Grid key={index} item xs={12} md={4}>
+          <Grid key={index} item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 display: "flex",
@@ -224,7 +224,13 @@ const ExperienceCard = () => {
                 </Grid>
                 <Grid container sx={{ justifyContent: "center" }}>
                   <Grid item>
-                    <IconButton>
+                    <IconButton
+                      sx={{
+                        "&:focus": {
+                          outline: "none",
+                        },
+                      }}
+                    >
                       <Facebook
                         sx={{
                           backgroundColor: "#14C38E",
@@ -238,12 +244,21 @@ const ExperienceCard = () => {
                     </IconButton>
                   </Grid>
                   <Grid item>
-                    <IconButton>
+                    <IconButton
+                      sx={{
+                        "&:focus": {
+                          outline: "none",
+                        },
+                      }}
+                    >
                       <Twitter
                         sx={{
                           backgroundColor: "#14C38E",
                           borderRadius: "100%",
                           "&:hover": { color: "#FFFFFF" },
+                          "&:focus": {
+                            outline: "none",
+                          },
                           padding: "10px",
                           width: "40px",
                           height: "40px",
@@ -252,12 +267,21 @@ const ExperienceCard = () => {
                     </IconButton>
                   </Grid>
                   <Grid item>
-                    <IconButton>
+                    <IconButton
+                      sx={{
+                        "&:focus": {
+                          outline: "none",
+                        },
+                      }}
+                    >
                       <Instagram
                         sx={{
                           backgroundColor: "#14C38E",
                           borderRadius: "100%",
                           "&:hover": { color: "#FFFFFF" },
+                          "&:focus": {
+                            outline: "none",
+                          },
                           padding: "10px",
                           width: "40px",
                           height: "40px",

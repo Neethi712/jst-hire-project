@@ -54,15 +54,14 @@ const SubCarousel = () => {
     <Grid
       container
       spacing={3}
-      // onMouseEnter={() => setIsHovered(true)} // Set isHovered to true when hovering
-      // onMouseLeave={() => setIsHovered(false)} // Set isHovered to false when not hovering
       sx={{
         padding: "120px 0 105px",
         margin: " 0 auto",
         justifyContent: "space-between",
         alignItems: "flex-start",
         maxWidth: {
-          xs: "100%",
+          xs: "400px",
+          sm: "750px",
           md: "1200px",
         },
         overflow: "hidden",
@@ -100,8 +99,6 @@ const SubCarousel = () => {
             xs: "25.5%",
             md: "none",
           },
-          // opacity: isHovered ? 1 : 0,
-          // pointerEvents: isHovered ? "auto" : "none",
           transition: "opacity 0.3s ease-in-out",
           position: "relative",
         }}
