@@ -6,8 +6,8 @@ import Courses from "./component/Courses";
 function App() {
   return (
     <>
-      <LandingPage/>
-      {/* <Courses /> */}
+      {/* <LandingPage/> */}
+      <Courses />
     </>
   );
 }
