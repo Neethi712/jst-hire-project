@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+.app-container {
+    display: flex;
+}
+
+.sidebar {
+    min-width: 250px;
+    margin-top: 40px;
+    max-height: 100vh;
+    background-color: #FFFFFF;
+}
+
+
+.sidebar-list {
+    list-style: none;
+    padding: 16px;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    color: #12B76A;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.page-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Apply styles to code blocks */
+/* .code-block {
+    background-color: #636161;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Fredoka', sans-serif;
+    overflow: auto;
+} */
+
+/* Apply styles to code within code blocks */
+/* .code-block code {
+    display: block;
+    white-space: pre-wrap;
+} */
+
+/* markdownStyles.css */
+.markdown-container {
+    /* Add your styles here */
+    text-align: left;
+    margin-top: 40px;
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+    /* Styles for headings */
+    color: #000000;
+    font-weight: 500;
+}
+
+.markdown-container p {
+    /* Styles for paragraphs */
+    color: #000000;
+}
+
+.markdown-container pre {
+    background-color: #3a3a3a;
+    padding: 15px;
+    border-radius: 4px;
+    overflow: auto;
+    color: whitesmoke;
+}
+
+.markdown-container code {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.markdown-container .keyword {
+    color: blue;
+    /* Customize the color for keywords */
+}
+
+.markdown-container .string {
+    color:#12B76A;
+    /* Customize the color for strings */
+}
+
+.markdown-container .comment {
+    color: gray;
+    /* Customize the color for comments */
+}
+
+/* Add more specific styles for other Markdown elements as needed */
+
+/* Sidebar.css */
+
+/* Style for the container with the scrollbar */
+.sidebar-scroll-container {
+    max-height: 100%; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Thin scrollbar (supported in Firefox) */
+    scrollbar-color: #12B76A transparent; /* Scrollbar color */
+  }
+  
+  /* Track (the background of the scrollbar) */
+  .sidebar-scroll-container::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+    height: 6px;
+  }
+  
+  /* Thumb (the draggable part of the scrollbar) */
+  .sidebar-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #12B76A; /* Thumb color */
+    border-radius: 3px; /* Rounded corners for the thumb */
+  }
+  
+  /* Optional: Handle (the top and bottom arrows of the scrollbar) */
+  .sidebar-scroll-container::-webkit-scrollbar-button {
+    display: none; /* Hide scrollbar buttons */
+  }
+  
