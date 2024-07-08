@@ -19,7 +19,7 @@ import Events from "./globalComponent/Events";
 import Review from "./globalComponent/Review";
 import Footer from "./globalComponent/Footer";
 import FooterSub from "./globalComponent/FooterSub";
-import Navbar from "./globalComponent/Navbar";
+
 
 const carouselItems = [
   {
@@ -55,7 +55,7 @@ function LandingPage() {
       <CssBaseline />
       <Container maxWidth="xl" style={containerStyle}>
         <Grid container spacing={3} justifyContent="center">
-          <Navbar />
+          
           <Grid item xs={12} sx={{ overflowY: "hidden" }}>
             <Carousel items={carouselItems} />
           </Grid>

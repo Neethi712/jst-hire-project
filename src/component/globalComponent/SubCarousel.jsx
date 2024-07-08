@@ -39,15 +39,15 @@ const SubCarousel = () => {
     setCurrentSlide(newSlide);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleSlideChange(1); // Move to the next slide
-    }, 5000); // Change slide every 5 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleSlideChange(1); // Move to the next slide
+  //   }, 5000); // Change slide every 5 seconds
 
-    return () => {
-      clearInterval(interval); // Clear the interval when the component unmounts
-    };
-  }, [currentSlide]);
+  //   return () => {
+  //     clearInterval(interval); // Clear the interval when the component unmounts
+  //   };
+  // }, [currentSlide]);
   const currentCarouselItem = carouselData[currentSlide];
 
   return (
@@ -135,7 +135,7 @@ const SubCarousel = () => {
                 margin: "0 -4px",
                 position: "absolute",
                 top: "42%",
-                left: { xs: "94%", md: "97%" },
+                left: { xs: "94%", md: "96%" },
                 backgroundColor: "#14C38E",
                 borderRadius: "100%",
                 padding: "4px",

@@ -32,7 +32,7 @@ const DataAnaComponent = () => {
             textTransform: "capitalize",
           }}
         >
-          data analysis and data science
+          BACK END DEVELOPER
         </Typography>
         <Typography
           variant="h6"

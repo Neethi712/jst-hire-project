@@ -3,11 +3,13 @@ import { Typography, MobileStepper, Grid, IconButton } from "@mui/material";
 import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import { Button } from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const Carousel = ({ items }) => {
   const maxSteps = items.length;
   const [activeStep, setActiveStep] = useState(0);
   const [zoomedOut, setZoomedOut] = useState(false);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setZoomedOut(true);
@@ -29,6 +31,10 @@ const Carousel = ({ items }) => {
     } else if (event.key === "ArrowRight") {
       handleNext();
     }
+  };
+
+  const handleClick = () => {
+    navigate('/viewcourses');
   };
 
   useEffect(() => {
@@ -163,6 +169,7 @@ const Carousel = ({ items }) => {
                   outline: "none",
                 },
               }}
+              onClick={handleClick}
             >
               View Courses
             </Button>

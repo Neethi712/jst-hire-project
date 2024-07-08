@@ -32,7 +32,7 @@ const GraficComponent = () => {
             textTransform: "capitalize",
           }}
         >
-          Graphic and interactive design
+          FRONT END DEVELOPER
         </Typography>
         <Typography
           variant="h6"

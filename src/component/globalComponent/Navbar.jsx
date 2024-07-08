@@ -11,10 +11,19 @@ import {
 } from "@mui/material";
 import logo from "../../assets/images/Vector.png";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import {useNavigate} from "react-router-dom";
 
 const Navbar = () => {
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-
+  const navigate = useNavigate();
+ 
+  const handleClickHome = () => {
+    navigate('/');
+  };
+  const handleClickCourses = () => {
+    navigate('/viewcourses');
+  };
+ 
   const handleMenuClick = (event) => {
     setMenuAnchorEl(event.currentTarget);
   };
@@ -70,7 +79,7 @@ const Navbar = () => {
                 }}
                 aria-controls="home-menu"
                 aria-haspopup="true"
-                onClick={handleMenuClick}
+                onClick={handleClickHome}
               >
                 Home
               </Button>
@@ -90,7 +99,7 @@ const Navbar = () => {
                 }}
                 aria-controls="courses-menu"
                 aria-haspopup="true"
-                onClick={handleMenuClick}
+                onClick={handleClickCourses}
               >
                 Courses
               </Button>

@@ -32,7 +32,7 @@ const DataAnaComponent = () => {
             textTransform: "capitalize",
           }}
         >
-          codecademy software programming
+          AWS CLOUD
         </Typography>
         <Typography
           variant="h6"
