@@ -9,19 +9,11 @@ import {
   IconButton,
 } from "@mui/material";
 import { Facebook, Twitter, Instagram } from "@mui/icons-material";
-<<<<<<< HEAD
 import Experience1 from "../../assets/images/experience1.jpg";
 import Experience2 from "../../assets/images/experience2.jpg";
 import Experience3 from "../../assets/images/experience3.jpg";
 import Experience4 from "../../assets/images/experience4.jpg";
 import Experience5 from "../../assets/images/experience5.jpg";
-=======
-import Experience1 from "../../assets/images/Experience1.jpg";
-import Experience2 from "../../assets/images/Experience2.jpg";
-import Experience3 from "../../assets/images/Experience3.jpg";
-import Experience4 from "../../assets/images/Experience4.jpg";
-import Experience5 from "../../assets/images/Experience5.jpg";
->>>>>>> f35d23db746730294d3c55924e61f1d54cdf54fe
 import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
